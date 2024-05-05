@@ -54,7 +54,7 @@ th {
 .title-home>.subtitle {
     font-size: 1.4rem;
     color: #7B8EA3;
-    margin: 50px 0;
+    margin: 24px 0;
 }
 
 .content {
@@ -64,12 +64,129 @@ th {
 
 .left {
     width: 65%;
-    height: auto;
+    height: fit-content;
     display: grid;
     grid-template-columns: 90%;
     justify-content: center;
-    gap: 16px;
 }
+
+.left>.slider {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+}
+
+.left>.slider>.img {
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.left>.slider>.people {
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+}
+
+.left>.slider>.people>.message {
+    margin: 24px 0;
+    font-size: 2rem;
+    font-style: italic;
+    color: #7B8EA3;
+}
+
+.left>.slider>.people>.about {
+    display: flex;
+    align-items: center;
+}
+
+.left>.slider>.people>.about>.profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url('./img/profile.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left>.slider>.people>.about>.about-profile {
+    margin: 16px 0;
+}
+
+.left>.slider>.people>.about>.about-profile>.name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #29323D;
+}
+
+.left>.slider>.people>.about>.about-profile>.about-people {
+    font-size: 0.95rem;
+    font-weight: 200;
+    font-style: italic;
+    color: #7B8EA3;
+    margin-top: 8px;
+}
+
+.left>.line>hr {
+    width: 35%;
+    border: 3px solid #EDF0F4;
+    border-radius: 5px;
+}
+
+.left>.line {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left>.benefit>.tittle{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #29323D;
+    text-align: center;
+}
+
+.left>.benefit>.subtittle {
+    font-size: 1.4rem;
+    color: #7B8EA3;
+    text-align: center;
+}
+
+
+.left>.benefit>.list{
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+    margin-top: 32px;
+    font-size: 1rem;
+}
+
+.left>.benefit>.list>.point{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #EDF0F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7B8EA3;  
+}
+
+.left>.benefit>.list>.main{
+    color: #3B4754;
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+}
+
 
 .right {
     width: 35%;
@@ -141,68 +258,4 @@ select {
     margin: 32px 0;
 }
 
-.left>.slider {
-    display: grid;
-    grid-template-columns: 100%;
-    justify-content: center;
-}
-
-.left>.slider>.img {
-    width: 100%;
-    height: 50vh;
-    background-position: center;
-    background-size: cover;
-    border-radius: 5px;
-}
-
-.left>.slider>.people {
-    display: grid;
-    grid-template-columns: 80%;
-    justify-content: center;
-}
-
-.left>.slider>.people>.message {
-    margin: 24px 0;
-    font-size: 2rem;
-    font-style: italic;
-    color: #7B8EA3;
-}
-
-.left>.slider>.people>.about{
-    display: flex;
-    align-items: center;
-}
-
-.left>.slider>.people>.about>.profile{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #EDF0F4;
-    margin-right: 16px;
-}
-
-.left>.slider>.people>.about>.about-profile{
-    
-    margin: 16px 0;
-}
-
-.left>.slider>.people>.about>.about-profile>.name {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #29323D;
-}
-
-.left>.slider>.people>.about>.about-profile>.about-people {
-    font-size: 0.95rem;
-    font-weight: 200;
-    font-style: italic;
-    color: #7B8EA3;
-    margin-top: 8px;
-}
-
-.left>hr{
-    width: 30%;
-    border: 3px solid #EDF0F4;
-    border-radius: 5px;
-}
 
