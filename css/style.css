@@ -20,6 +20,7 @@ body {
 
 .brand {
     font-size: 2.5rem;
+    color: #29323D;
 }
 
 .nav-bar {
@@ -141,7 +142,7 @@ body {
     margin-top: 8px;
 }
 
-.left>.line>hr {
+.line>hr {
     width: 35%;
     border: 3px solid #EDF0F4;
     border-radius: 5px;
@@ -152,6 +153,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.left>.benefit{
+    margin: 24px 0;
 }
 
 .left>.benefit>.tittle {
@@ -266,59 +271,122 @@ select {
     margin: 32px 0;
 }
 
-.our-page{
+.our-page {
     width: 100%;
+    padding: 64px 0;
+    margin: 24px;
 }
 
-.full-bar{
+.full-bar {
     width: 100%;
     padding: 64px 0;
     height: fit-content;
     background-color: #EDF0F4;
 }
 
-.full-bar>.tittle{
+.full-bar>.tittle {
     text-align: center;
     font-size: 3rem;
     font-weight: 700;
     color: #29323D;
 }
 
-.row{
+.row {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 32px 0;
+    margin: 84px 0;
 }
 
-.row>.col{
+.row>.col {
     width: 30%;
     display: flex;
     justify-content: center;
     align-items: start;
 }
 
-.row>.col>.icon{
+.row>.col>.icon {
     width: 50px;
     height: 50px;
     background-color: #EDF0F4;
     border-radius: 50%;
 }
 
-.row>.col>.main{
+.row>.col>.main {
     margin: 0 24px;
     width: 60%;
 }
 
-.row>.col>.main>.tittle{
+.row>.col>.main>.tittle {
     font-size: 2rem;
     color: #29323D;
     font-weight: 600;
 }
 
-.row>.col>.main>.deskrpsi{
+.row>.col>.main>.deskrpsi {
     margin-top: 24px;
     font-size: 1.4rem;
     color: #3B4754;
     font-weight: 300;
+}
+
+.closing {
+    width: 100%;
+    height: fit-content;
+    box-shadow: 0px -1px #d3d3d3;
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    margin: 32px 0;
+    padding: 32px 0;
+    position: relative;
+}
+
+.closing>.tittle {
+    font-size: 3.2rem;
+    color: #29323D;
+    justify-self: center;
+    text-align: center;
+}
+
+.closing>.subtittle {
+    font-size: 1.4rem;
+    color: #3B4754;
+    justify-self: center;
+    text-align: center;
+    margin: 16px 0;
+}
+
+.closing>a {
+    text-decoration: none;
+    justify-self: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 16px 64px;
+    color: #fff;
+    background-color: #29323D;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 15px;
+    margin-top: 24px;
+}
+
+.foo{
+    box-shadow: 0px -1px #d3d3d3;
+    width: 100%;
+    height: fit-content;
+    padding: 16px 0;
+    display: grid;
+}
+
+.foo>*{
+    justify-self: center;
+    margin: 8px 0;
+    color: #3B4754;
+}
+
+.foo>.link>a{
+    text-decoration: none;
+    color: #3B4754;
+    margin: 0 8px;
 }
