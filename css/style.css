@@ -22,16 +22,24 @@ body {
     font-size: 2.5rem;
 }
 
-.nav {
+.nav-bar {
     font-size: 1.2rem;
+    display: flex;
+    align-items: center;
 }
 
-.nav>table,
-tr,
-th {
-    border: 2px solid #29323D;
-    border-collapse: collapse;
-    padding: 10px;
+.nav-bar>a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-bar>a>.n {
+    width: fit-content;
+    height: fit-content;
+    padding: 12px;
+    background-color: #3B4754;
+    border-radius: 5px;
+    margin: 0 8px;
 }
 
 .home {
@@ -146,7 +154,7 @@ th {
     align-items: center;
 }
 
-.left>.benefit>.tittle{
+.left>.benefit>.tittle {
     font-size: 3rem;
     font-weight: bold;
     color: #29323D;
@@ -160,7 +168,7 @@ th {
 }
 
 
-.left>.benefit>.list{
+.left>.benefit>.list {
     height: fit-content;
     display: flex;
     justify-content: flex-start;
@@ -169,7 +177,7 @@ th {
     font-size: 1rem;
 }
 
-.left>.benefit>.list>.point{
+.left>.benefit>.list>.point {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -177,10 +185,10 @@ th {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #7B8EA3;  
+    color: #7B8EA3;
 }
 
-.left>.benefit>.list>.main{
+.left>.benefit>.list>.main {
     color: #3B4754;
     margin-left: 16px;
     display: flex;
@@ -258,4 +266,59 @@ select {
     margin: 32px 0;
 }
 
+.our-page{
+    width: 100%;
+}
 
+.full-bar{
+    width: 100%;
+    padding: 64px 0;
+    height: fit-content;
+    background-color: #EDF0F4;
+}
+
+.full-bar>.tittle{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #29323D;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 32px 0;
+}
+
+.row>.col{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.row>.col>.icon{
+    width: 50px;
+    height: 50px;
+    background-color: #EDF0F4;
+    border-radius: 50%;
+}
+
+.row>.col>.main{
+    margin: 0 24px;
+    width: 60%;
+}
+
+.row>.col>.main>.tittle{
+    font-size: 2rem;
+    color: #29323D;
+    font-weight: 600;
+}
+
+.row>.col>.main>.deskrpsi{
+    margin-top: 24px;
+    font-size: 1.4rem;
+    color: #3B4754;
+    font-weight: 300;
+}
