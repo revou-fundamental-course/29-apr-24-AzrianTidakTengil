@@ -415,8 +415,12 @@ select {
         color: #29323D;
     }
 
-    .nav-bar{
+    .nav-bar {
         display: none;
+    }
+
+    .left>.slider>.people>.message {
+        font-size: 1.5rem;
     }
 
     .content {
@@ -432,6 +436,8 @@ select {
         width: 80%;
     }
 
+
+
     .left>.benefit>.list>.point {
         width: 50px;
         height: 50px;
@@ -440,4 +446,6 @@ select {
     .row>.col>.main {
         margin: 0 16px;
     }
+
+
 }
