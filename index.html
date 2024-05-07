@@ -74,7 +74,7 @@
             <div class="title">
               <div class="head">Contact Us</div>
               <div class="paragraph">
-                Sales akan menghubungi anda 1x24 Jam setelah data kami terima.
+                Sales will contact you 1x24 hours after we receive the data.
               </div>
             </div>
             <div class="main">
@@ -83,25 +83,30 @@
                   <label for="name">Your Name:</label>
                   <input
                     type="text"
-                    placeholder="First and last name"
-                    required
+                    placeholder="First and last name" id="name"
                   />
+                  <p class="warning" id="warning-name">plese insert your name</p>
                 </div>
                 <div class="input">
                   <label for="email">Email Address:</label>
                   <input
                     type="email"
                     placeholder=" example@email.com"
-                    required
+                    id="email"
                   />
+                  <p class="warning" id="warning-email">plese insert your email</p>
                 </div>
                 <div class="input">
                   <label for="interested">What are you interested in?:</label>
                   <select name="interested" id="interested">
                     <option value="" selected disabled>select option</option>
+                    <option value="Comfort and Convenience">Comfort and Convenience</option>
+                    <option value="Safety and Security">Safety and Security</option>
+                    <option value="Discounts and Special Offers">Discounts and Special Offers</option>
                   </select>
+                  <p class="warning" id="warning-opt">plese insert your choice</p>
                 </div>
-                <input type="submit" value="SEND" />
+                <input type="button" value="SEND" onclick="sumbit()"/>
               </form>
             </div>
           </div>

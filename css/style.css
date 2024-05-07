@@ -399,3 +399,12 @@ select {
     color: #3B4754;
     margin: 0 8px;
 }
+
+.warning{
+    display: none;
+    margin: 2px;
+    color: red;
+    font-weight: 100;
+    padding: 0 8px;
+    font-size: 1rem;
+}
