@@ -434,18 +434,39 @@ select {
 
     .right {
         width: 80%;
+        grid-template-columns: 100%;
     }
 
+    .left {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        width: 80%;
+    }
 
+    .left>.benefit>.subtittle {
+        font-size: 1rem;
+    }
 
     .left>.benefit>.list>.point {
         width: 50px;
         height: 50px;
     }
 
-    .row>.col>.main {
-        margin: 0 16px;
+    .row {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        margin: 24px 0;
     }
+
+    .row>.col{
+        width: 80%;
+        margin: 16px 0;
+        justify-self: center;
+    }
+
+
 
 
 }
