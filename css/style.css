@@ -3,6 +3,7 @@
 html,
 body {
     width: 100%;
+    height: 100%;
     margin: 0;
 }
 
@@ -23,6 +24,44 @@ body {
 .brand {
     font-size: 2.5rem;
     color: #29323D;
+}
+
+.mobile {
+    display: none;
+}
+
+.navbar-mobile {
+    display: none;
+}
+
+.navbar-mobile>.list,
+.navbar-mobile>.list>a {
+    height: fit-content;
+    margin: 0 16px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #29323D;
+}
+
+.container-navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    background-color: #EDF0F4;
+    box-shadow: -1px 0 #d3d3d3;
+    z-index: 100;
+}
+
+.btn-close {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    justify-content: end;
+    padding: 6px 16px;
+    color: #29323D;
+    box-shadow: 0 1px #29323D;
 }
 
 .nav-bar {
@@ -408,6 +447,11 @@ select {
 }
 
 /* media */
+@media screen and (min-width:601px) {
+    .mobile {
+        display: none;
+    }
+}
 
 @media screen and (max-width:600px) {
     .brand {
@@ -437,6 +481,15 @@ select {
         grid-template-columns: 100%;
     }
 
+    .right>.container>.main>form>.input>input,
+    select {
+        font-size: 0.8rem;
+    }
+
+    .right>.container>.main>form>.input>select {
+        width: 100%;
+    }
+
     .left {
         display: grid;
         grid-template-columns: 100%;
@@ -453,6 +506,8 @@ select {
         height: 50px;
     }
 
+
+
     .row {
         display: grid;
         grid-template-columns: 100%;
@@ -460,13 +515,19 @@ select {
         margin: 24px 0;
     }
 
-    .row>.col{
+    .row>.col {
         width: 80%;
         margin: 16px 0;
         justify-self: center;
     }
 
+    .closing>.subtittle {
+        font-size: 1.2rem;
+    }
 
-
-
+    .mobile {
+        display: block;
+        font-size: 1.2rem;
+        color: #29323D;
+    }
 }

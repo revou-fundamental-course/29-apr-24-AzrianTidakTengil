@@ -14,6 +14,19 @@
         <a href="#Our_page"><div class="n">Our Package</div></a>
         <a href="#end"><div class="n">Call Us</div></a>
       </div>
+      <div class="mobile" onclick="list()" id="btn-navbar">
+        <i class="bi bi-list"></i>
+      </div>
+    </div>
+    <div class="navbar-mobile" id="mobile">
+      <div class="btn-close"><div onclick="exit()"><i class="bi bi-x-lg"></i></div></div>
+      <div class="list">
+        <a href="#Home"><div class="n">Home</div></a>
+        <hr>
+        <a href="#Our_page"><div class="n">Our Package</div></a>
+        <hr>
+        <a href="#end"><div class="n">Call Us</div></a>
+      </div>
     </div>
     <!-- body -->
     <div class="home" id="Home">
@@ -69,7 +82,7 @@
           </div>
         </div>
         <div class="right">
-          <div class="container">
+          <div class="container" id="contact">
             <!-- contact -->
             <div class="title">
               <div class="head">Contact Us</div>
@@ -83,9 +96,12 @@
                   <label for="name">Your Name:</label>
                   <input
                     type="text"
-                    placeholder="First and last name" id="name"
+                    placeholder="First and last name"
+                    id="name"
                   />
-                  <p class="warning" id="warning-name">plese insert your name</p>
+                  <p class="warning" id="warning-name">
+                    plese insert your name
+                  </p>
                 </div>
                 <div class="input">
                   <label for="email">Email Address:</label>
@@ -94,19 +110,29 @@
                     placeholder=" example@email.com"
                     id="email"
                   />
-                  <p class="warning" id="warning-email">plese insert your email</p>
+                  <p class="warning" id="warning-email">
+                    plese insert your email
+                  </p>
                 </div>
                 <div class="input">
                   <label for="interested">What are you interested in?:</label>
                   <select name="interested" id="interested">
                     <option value="" selected disabled>select option</option>
-                    <option value="Comfort and Convenience">Comfort and Convenience</option>
-                    <option value="Safety and Security">Safety and Security</option>
-                    <option value="Discounts and Special Offers">Discounts and Special Offers</option>
+                    <option value="Comfort and Convenience">
+                      Comfort and Convenience
+                    </option>
+                    <option value="Safety and Security">
+                      Safety and Security
+                    </option>
+                    <option value="Discounts and Special Offers">
+                      Discounts and Special Offers
+                    </option>
                   </select>
-                  <p class="warning" id="warning-opt">plese insert your choice</p>
+                  <p class="warning" id="warning-opt">
+                    plese insert your choice
+                  </p>
                 </div>
-                <input type="button" value="SEND" onclick="sumbit()"/>
+                <input type="button" value="SEND" onclick="sumbit()" />
               </form>
             </div>
           </div>
@@ -198,7 +224,7 @@
         have any questions or need further assistance. Safe travels and we look
         forward to helping you plan your next getaway!
       </div>
-      <a href="#">Call To Action</a>
+      <a href="#contact">Call To Action</a>
     </div>
 
     <!-- footer -->
@@ -208,9 +234,7 @@
         <a href="#">Terms Of Service</a>
         <a href="#">Privacy Policy</a>
       </div>
-      <div class="copyright">
-        &copy; 2024 Hikoyu
-      </div>
+      <div class="copyright">&copy; 2024 Hikoyu</div>
     </div>
   </body>
 </html>
