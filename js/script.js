@@ -39,7 +39,9 @@ function sumbit() {
     warningEmail.innerHTML = "plese insert your email";
   } else {
     const value = new String(emailUser.value);
-    const indexSimbol = value.search("@");
+    const indexSimbol = value.search(
+      /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$/
+    );
 
     if (indexSimbol !== -1) {
       warningEmail.style.display = "none";
